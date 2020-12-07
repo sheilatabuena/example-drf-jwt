@@ -68,3 +68,5 @@ curl -X GET -H "Authorization: Bearer $TOKEN"  http://127.0.0.1:8000/bus/message
 }
 
 I'm returning some other fields that were useful to the frontend at my current job.
+Status is 0 for failure and 1 for success. Errors are put in "errors". The count of objects is
+returned.

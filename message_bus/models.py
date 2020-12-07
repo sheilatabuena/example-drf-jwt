@@ -9,8 +9,8 @@ class Message(models.Model):
     """ model for a message """
 
     id = models.AutoField(primary_key=True, blank=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=True)
-    message = models.CharField(max_length=1000, null=False, default='', blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=False)
+    message = models.CharField(max_length=1000, null=False, default='', blank=False)
 
 
     @classmethod

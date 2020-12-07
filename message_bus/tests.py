@@ -173,7 +173,7 @@ class MessageTestCase(TestCase):
         self.assertIsNotNone(response.content)
 
         content = str(response.content)
-       # should contain only the message for test1
+       # should contain only the message for test1, not for staff
         self.assertTrue(bool(content.find('test1') > -1))
         self.assertEqual(content.find('staff'), -1)
 
